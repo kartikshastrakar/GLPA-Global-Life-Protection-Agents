@@ -1,0 +1,35 @@
+# Data Sources Registry
+
+This document tracks all data inputs used by the Global Life Protection Agents (GLPA) system. All sources must meet the criteria for public availability and non-personal data.
+
+## Data Governance Criteria
+To be included in this system, a data source must:
+1. Be accessible to the public or via official NGO/Governmental API.
+2. Contain zero Personally Identifiable Information (PII).
+3. Represent population-level trends or macro-economic/social indicators.
+
+---
+
+## Approved Data Sources
+
+| Source Name | Category | Public Availability | Non-Personal Confirmation |
+| :--- | :--- | :--- | :--- |
+| **UN OCHA (ReliefWeb) Reports** | NGO / Humanitarian | Yes (Public API/Web) | Confirmed: Aggregated field reports only. |
+| **ACLED (Conflict Data)** | Conflict Trends | Yes (Public Export) | Confirmed: Event-based, no individual tracking. |
+| **WHO Mental Health Atlas** | Health Statistics | Yes (Global Reports) | Confirmed: National/Regional statistics only. |
+| **World Bank Open Data** | Socio-Economic | Yes (Public API) | Confirmed: Macro-economic indicators. |
+
+---
+
+## Prohibited Data Categories
+The following data types are strictly blocked from being integrated into the watsonx Orchestrate workflow:
+* **Social Media Scraped Data:** High risk of PII and bias.
+* **Private Medical Records:** Violation of HIPAA/GDPR and project scope.
+* **Crisis Hotline Transcripts:** Sensitive, individual-level data.
+* **Law Enforcement Databases:** Out of scope (Prevention only, not enforcement).
+
+---
+
+## Update Logs
+* **2026-01-31:** Initial registry created. Sources restricted to UN, ACLED, and WHO for prototype phase.
+* **Audit Check:** All sources verified for compliance with "Population-Level Only" constraint.

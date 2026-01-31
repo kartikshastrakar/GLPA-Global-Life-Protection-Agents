@@ -1,0 +1,22 @@
+# ETHICS AND LIMITATIONS FRAMEWORK: GLPA SYSTEM
+
+## 1. CORE ETHICAL MANDATE
+The primary mission of this AI system is the preservation of life through population-level early warning signals. It operates under the humanitarian principles of Humanity, Neutrality, and Impartiality.
+
+## 2. STRICT BOUNDARIES & LIMITATIONS
+* NON-INDIVIDUAL FOCUS: This system is strictly prohibited from identifying, tracking, or making decisions about specific individuals. All analysis must remain at the macro/regional level.
+* NO CLINICAL DIAGNOSIS: The AI does not provide medical, psychological, or clinical diagnoses. It identifies "distress signals" as a sociological trend, not a biological condition.
+* NO REPLACEMENT FOR HUMANS: This AI is an advisory tool. Final decisions regarding resource allocation or emergency response MUST be made by qualified human professionals.
+* DATA PROHIBITION: The system is blocked from using social media scraping, private medical records, or live crisis hotline data.
+
+## 3. BIAS MITIGATION PROTOCOLS
+* SENSATIONALISM FILTER: The Context & Ethics Agent must identify and neutralize inflammatory or "alarmist" language in risk reports.
+* CULTURAL SENSITIVITY: Signals must be cross-referenced with historical and cultural context to avoid regional stereotyping.
+* SOURCE VERIFICATION: A single news report is never sufficient for a "High" severity rating. Multiple independent NGO or public reports are required for validation.
+
+## 4. ACCOUNTABILITY & TRANSPARENCY
+* EXPLAINABILITY: For every risk signal validated, the agent must provide an "Ethical Justification" explaining why the signal was deemed credible and how bias was checked.
+* AUDIT LOGS: All reasoning steps are recorded in the Transparency & Audit Agent for human review and system improvement.
+
+## 5. DECLARATION OF INTENT
+This system is built for prevention and support. It shall never be used for surveillance, predictive policing, or any activity that compromises individual privacy or human rights.
