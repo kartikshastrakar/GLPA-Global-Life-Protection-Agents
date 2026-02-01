@@ -1,0 +1,47 @@
+{
+  "orchestrate_workflow": {
+    "name": "GLPA-Risk-Detection",
+    "version": "1.0",
+    "trigger": {
+      "type": "schedule",
+      "interval": "6h"
+    },
+    "skills": [
+      {
+        "id": "reliefweb-connector",
+        "type": "api_call",
+        "endpoint": "https://api.reliefweb.int/v1/reports",
+        "parameters": {
+          "limit": 50,
+          "filter": "disaster.type.name:Conflict"
+        }
+      },
+      {
+        "id": "signal-detection",
+        "type": "watsonx_ai",
+        "model": "granite-13b-instruct-v2",
+        "prompt_template": "signal_detection_prompt",
+        "parameters": {
+          "temperature": 0.3,
+          "max_tokens": 512
+        }
+      },
+      {
+        "id": "ethics-validation",
+        "type": "watsonx_ai", 
+        "model": "granite-13b-instruct-v2",
+        "prompt_template": "ethics_validation_prompt",
+        "parameters": {
+          "temperature": 0.2,
+          "max_tokens": 256
+        }
+      }
+    ],
+    "flow": [
+      "reliefweb-connector -> signal-detection",
+      "signal-detection -> ethics-validation", 
+      "ethics-validation -> alert-generator"
+    ]
+  }
+}
+

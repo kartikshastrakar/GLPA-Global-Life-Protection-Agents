@@ -1,0 +1,10 @@
+{
+  "timestamp": "2024-01-31T14:30:00Z",
+  "region": "Eastern Mediterranean",
+  "risk_level": "medium", 
+  "indicators": ["refugee influx increase", "supply chain disruption"],
+  "confidence": 0.76,
+  "source": "UN OCHA ReliefWeb",
+  "validated_by": "ethics_agent",
+  "alert_sent": true
+}
